@@ -8,6 +8,7 @@ class Familiar1(models.Model):
     ID = models.IntegerField()
     fechaNacimiento = models.DateField()
     email = models.EmailField(max_length=40)
+    apodo = models.CharField(max_length=20,blank = True)
     profesion = models.CharField(max_length=40)
 
 class Familiar2(models.Model):
@@ -18,6 +19,7 @@ class Familiar2(models.Model):
     fechaNacimiento = models.DateField()
     email = models.EmailField(max_length=40)
     profesion = models.CharField(max_length=40)
+    apodo = models.CharField(max_length=40,blank = True)
 
 class Familiar3(models.Model):
     
@@ -27,3 +29,4 @@ class Familiar3(models.Model):
     fechaNacimiento = models.DateField()
     email = models.EmailField(max_length=40)
     profesion = models.CharField(max_length=40)
+    apodo = models.CharField(max_length=40,blank = True)
